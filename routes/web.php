@@ -35,3 +35,4 @@ Route::get('/jabatan/form/', [JabatanController::class, 'create']);
 Route::post('/jabatan/store/', [JabatanController::class, 'store']);
 Route::get('/jabatan/edit/{id}', [JabatanController::class, 'edit']);
 Route::put('/jabatan/{id}', [JabatanController::class, 'update']);
+Route::delete('/jabatan/{id}', [JabatanController::class, 'destroy']);

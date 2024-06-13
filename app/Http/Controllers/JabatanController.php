@@ -71,6 +71,9 @@ class JabatanController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $jab = Jabatan::find($id);
+        $jab->delete();
+
+        return redirect('/jabatan/');
     }
 }
