@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\JabatanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,6 @@ Route::post('/customer/store/', [CustomerController::class, 'store']);
 Route::get('/customer/edit/{id}', [CustomerController::class, 'edit']);
 Route::put('/customer/{id}', [CustomerController::class, 'update']);
 Route::delete('/customer/{id}', [CustomerController::class, 'destroy']);
+
+
+Route::get('/jabatan/', [JabatanController::class, 'index']);
