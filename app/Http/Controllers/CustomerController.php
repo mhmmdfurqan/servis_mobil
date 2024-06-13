@@ -75,6 +75,9 @@ class CustomerController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $cus = Customer::find($id);
+        $cus->delete();
+
+        return redirect('/customer/');
     }
 }
