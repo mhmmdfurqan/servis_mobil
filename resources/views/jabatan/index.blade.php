@@ -13,7 +13,8 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Jabatan</th>                                                                                      
+                                            <th>Jabatan</th>  
+                                            <th>Aksi</th>                                                                                    
                                         </tr>
                                     </thead>
 
@@ -21,14 +22,26 @@
                                         <tr>
                                             <td>1</td>                                            
                                             <td>Montir 1</td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>Montir 2</td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Montir 3</td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>                                       
                                     </tbody>
                                 </table>
