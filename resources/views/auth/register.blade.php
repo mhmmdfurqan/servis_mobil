@@ -64,7 +64,7 @@
                                     <div class="form-group">
                                         <label class="form-label" for="password-confirm">Konfirmasi Password</label>
                                         <div class="form-control-wrap">
-                                            <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="password">
+                                            <a href="#" class="form-icon form-icon-right passcode-switch lg" data-target="password-confirm">
                                                 <em class="passcode-icon icon-show icon ni ni-eye"></em>
                                                 <em class="passcode-icon icon-hide icon ni ni-eye-off"></em>
                                             </a>                                                                                        
