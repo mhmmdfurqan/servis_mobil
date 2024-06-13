@@ -12,7 +12,9 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        return view('customer.index');
+        $nomor = 1;
+        $cus = Customer::all(); //eloquent ORM
+        return view('customer.index',compact('nomor','cus'));
     }
 
     /**

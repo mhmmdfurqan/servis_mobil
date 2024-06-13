@@ -16,40 +16,25 @@
                                             <th>Nama Customer</th>
                                             <th>Alamat Customer</th>
                                             <th>Nomor Telepon</th>  
-                                            <th>Aksi</th>                                         
+                                            <th>Aksi</th>                                          
                                         </tr>
-                                    </thead>                                   
+                                    </thead>
+                                   
                                     <tbody>
+                                        @forelse ($cus as $item)
                                         <tr>
-                                            <td>1</td>
-                                            <td>Alex D</td>
-                                            <td>Surabaya</td>
-                                            <td>111111111111</td>
+                                        <td>{{$nomor++}}</td>
+                                        <td>{{$item->nama_customer}}</td>
+                                        <td>{{$item->alamat_customer}}</td>
+                                        <td>{{$item->telp_customer}}</td>  
                                             <td>
-                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
-                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                                <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                                <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>                                               
                                             </td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Garrett Winters</td>
-                                            <td>Surabaya</td>
-                                            <td>222222222222</td>
-                                            <td>
-                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
-                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Ashton Cox</td>                                                                                  
-                                            <td>Surabaya</td>
-                                            <td>333333333333</td>
-                                            <td>
-                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
-                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
-                                            </td>
-                                        </tr>                                       
+                                        </tr>                                        
+                                        @empty
+
+                                        @endforelse                                       
                                     </tbody>
                                 </table>
                             </div>
