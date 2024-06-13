@@ -22,3 +22,4 @@ Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/customer/', [CustomerController::class, 'index']);
+Route::get('/customer/form/', [CustomerController::class, 'create']);
