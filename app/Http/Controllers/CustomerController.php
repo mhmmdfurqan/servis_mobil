@@ -52,7 +52,8 @@ class CustomerController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $cus = Customer::find($id);
+        return view('customer.edit',compact('cus'));
     }
 
     /**
@@ -60,7 +61,13 @@ class CustomerController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $cus = Customer::find($id);
+        $cus->nama_customer = $request->nama_customer;
+        $cus->alamat_customer = $request->alamat_customer;
+        $cus->telp_customer = $request->telp_customer;
+        $cus->save();
+
+        return redirect ('/customer/');
     }
 
     /**

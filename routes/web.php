@@ -24,3 +24,5 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 Route::get('/customer/', [CustomerController::class, 'index']);
 Route::get('/customer/form/', [CustomerController::class, 'create']);
 Route::post('/customer/store/', [CustomerController::class, 'store']);
+Route::get('/customer/edit/{id}', [CustomerController::class, 'edit']);
+Route::put('/customer/{id}', [CustomerController::class, 'update']);

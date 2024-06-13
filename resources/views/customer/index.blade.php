@@ -28,7 +28,7 @@
                                         <td>{{$item->alamat_customer}}</td>
                                         <td>{{$item->telp_customer}}</td>  
                                             <td>
-                                                <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                                <a href="/customer/edit/{{$item->id}}" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
                                                 <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>                                               
                                             </td>
                                         </tr>                                        
