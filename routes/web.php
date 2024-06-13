@@ -32,3 +32,4 @@ Route::delete('/customer/{id}', [CustomerController::class, 'destroy']);
 
 Route::get('/jabatan/', [JabatanController::class, 'index']);
 Route::get('/jabatan/form/', [JabatanController::class, 'create']);
+Route::post('/jabatan/store/', [JabatanController::class, 'store']);

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Customer;
+use App\Models\Jabatan;
 
 class JabatanController extends Controller
 {
@@ -28,7 +28,11 @@ class JabatanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $jab = new Jabatan;
+        $jab->jabatan = $request->jabatann;       
+        $jab->save();
+
+        return redirect('/jabatan/');
     }
 
     /**

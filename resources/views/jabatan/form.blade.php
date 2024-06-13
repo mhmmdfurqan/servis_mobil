@@ -9,7 +9,7 @@
                 @csrf
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Jabatan</label>
-                    <input type="text" name="#" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="text" name="jabatann" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
                 
                 <button type="submit" class="btn btn-primary">Tambah Data</button>
