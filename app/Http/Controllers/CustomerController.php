@@ -28,7 +28,13 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $cus = new Customer;
+        $cus->nama_customer = $request->nama_customer;
+        $cus->alamat_customer = $request->alamat_customer;
+        $cus->telp_customer = $request->telp_customer;
+        $cus->save();
+
+        return redirect('/customer/');
     }
 
     /**
