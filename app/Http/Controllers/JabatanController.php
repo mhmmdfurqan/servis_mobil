@@ -12,7 +12,9 @@ class JabatanController extends Controller
      */
     public function index()
     {
-        return view('jabatan.index');
+        $nomor = 1;
+        $jab = Jabatan::all(); //eloquent ORM
+        return view('jabatan.index',compact('nomor','jab'));
     }
 
     /**
