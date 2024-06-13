@@ -50,7 +50,8 @@ class JabatanController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $jab = Jabatan::find($id);
+        return view('jabatan.edit',compact('jab'));
     }
 
     /**
@@ -58,7 +59,11 @@ class JabatanController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $jab = Jabatan::find($id);
+        $jab->jabatan = $request->jabatann;
+        $jab->save();
+
+        return redirect ('/jabatan/');
     }
 
     /**

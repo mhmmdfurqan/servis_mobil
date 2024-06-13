@@ -24,7 +24,7 @@
                                             <td>{{$nomor++}}</td>
                                             <td>{{$item->jabatan}}</td>
                                             <td>
-                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <a href="/jabatan/edit/{{$item->id}}" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
                                             <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
                                             </td>
                                         </tr>
