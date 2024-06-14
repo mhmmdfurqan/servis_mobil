@@ -30,8 +30,8 @@
                                             <td>{{$item->jabatans->jabatan}}</td>
                                             <td>
                                             <a href="/petugas/edit/{{$item->id}}" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
-                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
-                                            <div class="modal fade" tabindex="-1" id="#">    
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus{{$item->id}}"><em class="bi bi-trash"></em></button>
+                                            <div class="modal fade" tabindex="-1" id="hapus{{$item->id}}">    
                                                     <div class="modal-dialog" role="document">        
                                                         <div class="modal-content">            
                                                             <a href="petugas" class="close" data-dismiss="modal" aria-label="Close">                

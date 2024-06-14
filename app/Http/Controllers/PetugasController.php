@@ -81,6 +81,9 @@ class PetugasController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $pet = Petugas::find($id);
+        $pet->delete();
+
+        return redirect('/petugas/');
     }
 }
