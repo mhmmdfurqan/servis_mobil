@@ -56,7 +56,9 @@ class PetugasController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $pet = Petugas::find($id);
+        $jab = Jabatan::all();
+        return view('petugas.edit',compact('pet','jab'));
     }
 
     /**
@@ -64,7 +66,14 @@ class PetugasController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $pet = Petugas::find($id);
+        $pet->nama_petugas = $request->nama_petugas;
+        $pet->alamat_petugas = $request->alamat_petugas;
+        $pet->telp_petugas = $request->telp_petugas;
+        $pet->jabatan_id = $request->jabatan;
+        $pet->save();
+
+        return redirect('/petugas/');
     }
 
     /**
