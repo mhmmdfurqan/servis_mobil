@@ -13,7 +13,10 @@ class PetugasController extends Controller
      */
     public function index()
     {
-        return view('petugas.index');
+        $nomor = 1;
+        $pet = Petugas::all(); //eloquent ORM
+        $jab = Jabatan::all();
+        return view('petugas.index',compact('nomor','pet','jab'));
     }
 
     /**
