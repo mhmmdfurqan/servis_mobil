@@ -26,12 +26,15 @@
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Jabatan</label>
                     <select name="jabatan" class="form-control" id="">
+                        <option value="">-Pilih Jabatan-</option>
                         @foreach ($jab as $item)
-                        <option value="{{$item->id}}">{{$item->kode}} - {{$item->jabatan}}</option>
-                        @endforeach                    
+                            <option value="{{$item->id}}">{{$item->kode}} - {{$item->jabatan}}</option>
+                        @endforeach
+
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Tambah Data</button>
+                <a href="" class="btn btn-secondary" data-dismiss="modal">Kembali</a>
             </form>
         </div>
         </div>

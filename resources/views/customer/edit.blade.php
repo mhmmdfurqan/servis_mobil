@@ -23,6 +23,7 @@
                     <input type="text" name="telp_customer" value="{{$cus->telp_customer}}" class="form-control" id="exampleInputPassword1">
                 </div>
                 <button type="submit" class="btn btn-primary">Tambah Data</button>
+                <a href="" class="btn btn-secondary" data-dismiss="modal">Kembali</a>
             </form>
         </div>
         </div>
