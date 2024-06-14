@@ -20,7 +20,8 @@ class PetugasController extends Controller
      */
     public function create()
     {
-        //
+        $jab = Jabatan::all();
+        return view('petugas.form',compact('jab'));
     }
 
     /**
