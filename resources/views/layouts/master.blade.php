@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="{{ asset('./assets/css/dashlite.css?ver=3.2.0')}}">
     <link id="skin-default" rel="stylesheet" href="{{ asset('./assets/css/theme.css?ver=3.2.0')}}">    
     <link rel="stylesheet" type="text/css" href="{{ asset('./assets/css/libs/bootstrap-icons.css')}}">
+    <script src="{{ asset('https://use.fontawesome.com/releases/v6.3.0/js/all.js')}}" crossorigin="anonymous"></script>
 </head>
 
 <body class="nk-body bg-lighter npc-default has-sidebar ">
@@ -25,7 +26,7 @@
             <div class="nk-sidebar nk-sidebar-fixed is-light " data-content="sidebarMenu">
                 <div class="nk-sidebar-element nk-sidebar-head">
                     <div class="nk-sidebar-brand">
-                        <a href="html/index.html" class="logo-link nk-sidebar-logo">
+                        <a href="/" class="logo-link nk-sidebar-logo">
                             <img class="logo-light logo-img" src="{{ asset('./images/logo.png')}}" srcset="{{ asset('./images/logo2x.png 2x')}}" alt="logo">
                             <img class="logo-dark logo-img" src="{{ asset('./images/logo-dark.png')}}" srcset="{{ asset('./images/logo-dark2x.png 2x')}}" alt="logo-dark">
                             <img class="logo-small logo-img logo-img-small" src="{{ asset('./images/logo-small.png')}}" srcset="{{ asset('./images/logo-small2x.png 2x')}}" alt="logo-small">
@@ -41,7 +42,7 @@
                         <div class="nk-sidebar-menu" data-simplebar>
                             <ul class="nk-menu">                               
                                 <li class="nk-menu-heading">
-                                    <h6 class="overline-title text-primary-alt">Dashboards</h6>
+                                    <h6 class="overline-title text-primary-alt">Customer Service</h6>
                                 </li><!-- .nk-menu-item -->                                                                                           
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
@@ -115,7 +116,26 @@
                                             <a href="html/pembayaran-sales.html" class="nk-menu-link"><span class="nk-menu-text">Pembayaran List - Sales</span></a>
                                         </li>
                                     </ul><!-- .nk-menu-sub -->
-                                </li><!-- .nk-menu-item -->                                
+                                </li><!-- .nk-menu-item -->  
+
+
+                                <li class="nk-menu-heading">
+                                    <h6 class="overline-title text-primary-alt">Montir</h6>
+                                </li><!-- .nk-menu-item -->    
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="fa-solid fa-screwdriver-wrench"></em></span>
+                                        <span class="nk-menu-text">Service</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="montir" class="nk-menu-link"><span class="nk-menu-text">Service List</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="montir/form" class="nk-menu-link"><span class="nk-menu-text">Service Add</span></a>
+                                        </li>
+                                    </ul><!-- .nk-menu-sub -->
+                                </li><!-- .nk-menu-item -->     
                                 
                             </ul><!-- .nk-menu -->
                         </div><!-- .nk-sidebar-menu -->
