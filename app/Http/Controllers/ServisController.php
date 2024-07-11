@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Servis;
 
 class ServisController extends Controller
 {
@@ -11,7 +12,7 @@ class ServisController extends Controller
      */
     public function index()
     {
-        //
+        return view('service.index');
     }
 
     /**

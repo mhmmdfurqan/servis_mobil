@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\PetugasController;
+use App\Http\Controllers\ServisController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +46,5 @@ Route::post('/petugas/store/', [PetugasController::class, 'store']);
 Route::get('/petugas/edit/{id}', [PetugasController::class, 'edit']);
 Route::put('/petugas/{id}', [PetugasController::class, 'update']);
 Route::delete('/petugas/{id}', [PetugasController::class, 'destroy']);
+
+Route::get('/servis/', [ServisController::class, 'index']);
