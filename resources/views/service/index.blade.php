@@ -19,7 +19,8 @@
                                             <th>Montir</th>
                                             <th>Tanggal Service</th>
                                             <th>Perbaikan</th>
-                                            <th>Status</th>                                         
+                                            <th>Status</th>
+                                            <th>Aksi</th>                                         
                                         </tr>
                                     </thead>                                   
                                     <tbody>
@@ -32,6 +33,10 @@
                                             <td>19/02/2023</td>
                                             <td>suara kasar bagian mesin</td>
                                             <td>Selesai</td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -42,6 +47,10 @@
                                             <td>20/04/2023</td>
                                             <td>AC kurang dingin</td>
                                             <td>Sedang dikerjakan</td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
@@ -52,6 +61,10 @@
                                             <td>20/04/2023</td>
                                             <td>Mobil overheat</td>
                                             <td>Sedang dikerjakan</td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>                                       
                                     </tbody>
                                 </table>

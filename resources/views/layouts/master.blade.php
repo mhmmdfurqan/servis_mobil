@@ -93,10 +93,10 @@
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="html/service-list.html" class="nk-menu-link"><span class="nk-menu-text">Service List</span></a>
+                                            <a href="servis" class="nk-menu-link"><span class="nk-menu-text">Service List</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="html/service-details.html" class="nk-menu-link"><span class="nk-menu-text">Service Details</span></a>
+                                            <a href="servis/form" class="nk-menu-link"><span class="nk-menu-text">Service Add</span></a>
                                         </li>
                                     </ul><!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->

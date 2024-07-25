@@ -48,3 +48,6 @@ Route::put('/petugas/{id}', [PetugasController::class, 'update']);
 Route::delete('/petugas/{id}', [PetugasController::class, 'destroy']);
 
 Route::get('/servis/', [ServisController::class, 'index']);
+Route::get('/servis/form/', [ServisController::class, 'create']);
+Route::get('/servis/form/', [ServisController::class, 'create']);
+Route::post('/servis/store/', [ServisController::class, 'store']);

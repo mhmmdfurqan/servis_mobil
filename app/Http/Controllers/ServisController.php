@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Servis;
+use App\Models\Customer;
+use App\Models\Petugas;
 
 class ServisController extends Controller
 {
@@ -20,7 +22,10 @@ class ServisController extends Controller
      */
     public function create()
     {
-        //
+        $cus = Customer::all();
+        $pet = Petugas::all();
+        $ser = Servis::all();
+        return view('service.form',compact('cus','pet','ser'));
     }
 
     /**
@@ -28,7 +33,16 @@ class ServisController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $ser = new Servis;
+        $ser->customer_id = $request->customer_id;
+        $ser->no_polisi = $request->no_polisi;
+        $ser->petugas_id = $request->petugas_id;
+        $ser->tanggal_servis = $request->tanggal_servis;
+        $ser->perbaikan = $request->perbaikan;
+        $ser->status = $request->status;
+        $ser->save();
+
+        return redirect('/servis/');
     }
 
     /**
