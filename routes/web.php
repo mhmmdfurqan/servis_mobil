@@ -51,3 +51,5 @@ Route::get('/servis/', [ServisController::class, 'index']);
 Route::get('/servis/form/', [ServisController::class, 'create']);
 Route::get('/servis/form/', [ServisController::class, 'create']);
 Route::post('/servis/store/', [ServisController::class, 'store']);
+Route::get('/servis/edit/{id}', [ServisController::class, 'edit']);
+Route::put('/servis/{id}', [ServisController::class, 'update']);

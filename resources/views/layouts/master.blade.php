@@ -79,10 +79,10 @@
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="petugas" class="nk-menu-link"><span class="nk-menu-text">Montir List</span></a>
+                                            <a href="montir" class="nk-menu-link"><span class="nk-menu-text">Montir List</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="petugas/form" class="nk-menu-link"><span class="nk-menu-text">Montir Add</span></a>
+                                            <a href="montir/form" class="nk-menu-link"><span class="nk-menu-text">Montir Add</span></a>
                                         </li>
                                     </ul><!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->                                

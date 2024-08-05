@@ -44,6 +44,7 @@ class ServisController extends Controller
         $ser->customer_id = $request->customer_id;
         $ser->no_polisi = $request->no_polisi;
         $ser->petugas_id = $request->petugas_id;
+        $ser->montir_id = $request->montir_id;
         $ser->tanggal_servis = $request->tanggal_servis;
         $ser->perbaikan = $request->perbaikan;
         $ser->status = $request->status;
@@ -65,7 +66,11 @@ class ServisController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $ser = Servis::find($id);
+        $cus = Customer::all();
+        $pet = Petugas::all();
+        $mor = Montir::all();
+        return view('service.edit',compact('ser','pet','cus','mor'));
     }
 
     /**
@@ -73,7 +78,17 @@ class ServisController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $ser = Servis::find($id);
+        $ser->customer_id = $request->customer_id;
+        $ser->no_polisi = $request->no_polisi;
+        $ser->petugas_id = $request->petugas_id;
+        $ser->montir_id = $request->montir_id;
+        $ser->tanggal_servis = $request->tanggal_servis;
+        $ser->perbaikan = $request->perbaikan;
+        $ser->status = $request->status;
+        $ser->save();
+
+        return redirect('/servis/');
     }
 
     /**
