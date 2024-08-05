@@ -13,7 +13,10 @@ class MontirController extends Controller
      */
     public function index()
     {
-        return view('montir.index');
+        $nomor = 1;
+        $mor = Montir::all(); //eloquent ORM
+        $jab = Jabatan::all();
+        return view('montir.index',compact('nomor','mor','jab'));
     }
 
     /**

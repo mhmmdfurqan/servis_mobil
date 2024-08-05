@@ -14,4 +14,9 @@ class Jabatan extends Model
     {
         return $this->belongsTo(Petugas::class);
     }
+
+    public function montir(): BelongsTo
+    {
+        return $this->belongsTo(Montir::class);
+    }
 }
