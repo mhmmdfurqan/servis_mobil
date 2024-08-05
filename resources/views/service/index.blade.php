@@ -37,6 +37,29 @@
                                             <td>
                                             <a href="/servis/edit/{{$item->id}}" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
                                             <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            <div class="modal fade" tabindex="-1" id="#">    
+                                                    <div class="modal-dialog" role="document">        
+                                                        <div class="modal-content">            
+                                                            <a href="servis" class="close" data-dismiss="modal" aria-label="Close">                
+                                                                <em class="icon ni ni-cross"></em>            
+                                                            </a>            
+                                                            <div class="modal-header">                
+                                                                <h5 class="modal-title">Peringatan!</h5>            
+                                                            </div>            
+                                                            <div class="modal-body">                
+                                                                Yakin Data Servis {{$item->nama_customer}} di Hapus?
+                                                            </div>            
+                                                            <div class="modal-footer bg-light">                
+                                                            <a href="servis" class="btn btn-secondary" data-dismiss="modal">Batal</a>
+                                                            <form action="/servis/{{$item->id}}" method="post">
+                                                                @method('DELETE')
+                                                                @csrf
+                                                                <button type="submit" class="btn btn-danger">Hapus</button>
+                                                            </form>                                                                   
+                                                            </div>        
+                                                        </div>    
+                                                    </div>
+                                                </div>
                                             </td>
                                         </tr>
                                         @empty
