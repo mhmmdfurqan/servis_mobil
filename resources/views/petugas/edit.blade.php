@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title','Edit Petugas')
-@section('heading','Edit Petugas')
+@section('title','Edit Cs')
+@section('heading','Edit Cs')
 
 @section('content')
     <div class="card">
@@ -9,12 +9,12 @@
                 @method('PUT')
                 @csrf
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nama Petugas</label>
+                    <label for="exampleInputEmail1" class="form-label">Nama Cs</label>
                     <input type="text" name="nama_petugas" class="form-control" value="{{$pet->nama_petugas}}" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Alamat Petugas</label>
+                    <label for="exampleInputPassword1" class="form-label">Alamat Cs</label>
                     <input type="text" name="alamat_petugas" class="form-control" value="{{$pet->alamat_petugas}}" id="exampleInputPassword1">
                 </div>
 

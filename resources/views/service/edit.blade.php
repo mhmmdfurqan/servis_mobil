@@ -61,6 +61,7 @@
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Tambah Data</button>
+                <a href="" class="btn btn-secondary" data-dismiss="modal">Kembali</a>
             </form>
         </div>
         </div>

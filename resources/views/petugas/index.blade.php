@@ -1,11 +1,11 @@
 @extends('layouts.master')
-@section('title','Petugas')
-@section('heading','Petugas List')
+@section('title','Cs')
+@section('heading','Cs List')
 
 @section('content')
                 <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Petugas</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Data Cs</h6>
                         </div>                          
                         <div class="card-body">
                             <div class="table-responsive">
@@ -13,9 +13,9 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nama Petugas</th>
-                                            <th>Alamat Petugas</th>
-                                            <th>Nomor Telepon</th>
+                                            <th>Nama Cs</th>
+                                            <th>Alamat Cs</th>
+                                            <th>Nomor Cs</th>
                                             <th>Jabatan</th>
                                             <th>Aksi</th>                                                                                
                                         </tr>
