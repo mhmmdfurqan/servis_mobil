@@ -81,6 +81,9 @@ class MontirController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $mor = Montir::find($id);
+        $mor->delete();
+        
+        return redirect('/montir/');
     }
 }
