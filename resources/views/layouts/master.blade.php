@@ -61,14 +61,28 @@
                                 <li class="nk-menu-item has-sub">
                                     <a href="#" class="nk-menu-link nk-menu-toggle">
                                         <span class="nk-menu-icon"><em class="icon ni ni-user-list-fill"></em></span>
-                                        <span class="nk-menu-text">Petugas</span>
+                                        <span class="nk-menu-text">Customer Service</span>
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="petugas" class="nk-menu-link"><span class="nk-menu-text">Petugas List</span></a>
+                                            <a href="petugas" class="nk-menu-link"><span class="nk-menu-text">Cs List</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="petugas/form" class="nk-menu-link"><span class="nk-menu-text">Petugas Add</span></a>
+                                            <a href="petugas/form" class="nk-menu-link"><span class="nk-menu-text">Cs Add</span></a>
+                                        </li>
+                                    </ul><!-- .nk-menu-sub -->
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-user-list-fill"></em></span>
+                                        <span class="nk-menu-text">Montir</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="petugas" class="nk-menu-link"><span class="nk-menu-text">Montir List</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="petugas/form" class="nk-menu-link"><span class="nk-menu-text">Montir Add</span></a>
                                         </li>
                                     </ul><!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->                                
@@ -117,26 +131,7 @@
                                         </li>
                                     </ul><!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->  
-
-
-                                <li class="nk-menu-heading">
-                                    <h6 class="overline-title text-primary-alt">Montir</h6>
-                                </li><!-- .nk-menu-item -->    
-                                <li class="nk-menu-item has-sub">
-                                    <a href="#" class="nk-menu-link nk-menu-toggle">
-                                        <span class="nk-menu-icon"><em class="fa-solid fa-screwdriver-wrench"></em></span>
-                                        <span class="nk-menu-text">Service</span>
-                                    </a>
-                                    <ul class="nk-menu-sub">
-                                        <li class="nk-menu-item">
-                                            <a href="montir" class="nk-menu-link"><span class="nk-menu-text">Service List</span></a>
-                                        </li>
-                                        <li class="nk-menu-item">
-                                            <a href="montir/form" class="nk-menu-link"><span class="nk-menu-text">Service Add</span></a>
-                                        </li>
-                                    </ul><!-- .nk-menu-sub -->
-                                </li><!-- .nk-menu-item -->     
-                                
+                                                                   
                             </ul><!-- .nk-menu -->
                         </div><!-- .nk-sidebar-menu -->
                     </div><!-- .nk-sidebar-content -->

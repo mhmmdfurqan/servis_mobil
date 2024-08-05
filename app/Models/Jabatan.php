@@ -10,7 +10,7 @@ class Jabatan extends Model
 {
     use HasFactory;
 
-    public function petugass(): BelongsTo
+    public function petugas(): BelongsTo
     {
         return $this->belongsTo(Petugas::class);
     }

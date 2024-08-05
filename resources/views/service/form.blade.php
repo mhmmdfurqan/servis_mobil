@@ -33,15 +33,15 @@
                     </select>
                 </div>
 
-                <!-- <div class="mb-3">
+                <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Montir</label>
-                    <select name="nama_petugas" class="form-control" id="">
+                    <select name="montir_id" class="form-control" id="">
                         <option value="">-Pilih Nama-</option>
-                        @foreach ($pet as $item)
-                            <option value="{{$item->id}}">{{$item->kode}} - {{$item->nama_petugas}}</option>
+                        @foreach ($mor as $item)
+                            <option value="{{$item->id}}">{{$item->kode}} - {{$item->nama_montir}}</option>
                         @endforeach
                     </select>
-                </div> -->
+                </div>
 
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Tanggal Service</label>
@@ -49,13 +49,15 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Perbaikan</label>
+                    <label for="exampleInputPassword1" class="form-label">Diagnosa</label>
                     <input type="text" name="perbaikan" class="form-control" id="exampleInputPassword1">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Status</label>
-                    <input type="text" name="status" class="form-control" id="exampleInputPassword1">
+                    <select name="status" class="form-control" id="exampleInputPassword1">
+                        <option value="sedang diproses">sedang proses</option>                        
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Tambah Data</button>
             </form>

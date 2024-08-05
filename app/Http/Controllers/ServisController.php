@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Servis;
 use App\Models\Customer;
 use App\Models\Petugas;
+use App\Models\Montir;
 
 class ServisController extends Controller
 {
@@ -14,7 +15,12 @@ class ServisController extends Controller
      */
     public function index()
     {
-        return view('service.index');
+        $nomor = 1;
+        $cus = Customer::all();
+        $pet = Petugas::all();
+        $ser = Servis::all();
+        $mor = Montir::all();
+        return view('service.index',compact('nomor','cus','pet','ser','mor'));
     }
 
     /**
@@ -25,7 +31,8 @@ class ServisController extends Controller
         $cus = Customer::all();
         $pet = Petugas::all();
         $ser = Servis::all();
-        return view('service.form',compact('cus','pet','ser'));
+        $mor = Montir::all();
+        return view('service.form',compact('cus','pet','ser','mor'));
     }
 
     /**
