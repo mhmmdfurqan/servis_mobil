@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Montir;
+use App\Models\Jabatan;
 
 class MontirController extends Controller
 {
@@ -20,7 +21,8 @@ class MontirController extends Controller
      */
     public function create()
     {
-        //
+        $jab = Jabatan::all();
+        return view('montir.form',compact('jab'));
     }
 
     /**

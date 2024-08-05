@@ -15,7 +15,9 @@
                                             <th>No</th>
                                             <th>Nama Montir</th>
                                             <th>Alamat Montir</th>
-                                            <th>Nomor Telepon</th>                                           
+                                            <th>Nomor Telepon</th>  
+                                            <th>Jabatan</th>
+                                            <th>Aksi</th>                                           
                                         </tr>
                                     </thead>                                   
                                     <tbody>
@@ -24,18 +26,30 @@
                                             <td>Alex D</td>
                                             <td>Surabaya</td>
                                             <td>111111111111</td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
                                             <td>Garrett Winters</td>
                                             <td>Surabaya</td>
                                             <td>222222222222</td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Ashton Cox</td>                                                                                  
                                             <td>Surabaya</td>
                                             <td>333333333333</td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm"><em class="bi bi-pencil"></em></a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>                                       
                                     </tbody>
                                 </table>
