@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Montir;
 
 class MontirController extends Controller
 {
@@ -11,7 +12,7 @@ class MontirController extends Controller
      */
     public function index()
     {
-        //
+        return view('montir.index');
     }
 
     /**

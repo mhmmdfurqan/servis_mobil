@@ -5,6 +5,7 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\PetugasController;
 use App\Http\Controllers\ServisController;
+use App\Http\Controllers\MontirController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +40,7 @@ Route::get('/jabatan/edit/{id}', [JabatanController::class, 'edit']);
 Route::put('/jabatan/{id}', [JabatanController::class, 'update']);
 Route::delete('/jabatan/{id}', [JabatanController::class, 'destroy']);
 
+Route::get('/montir/', [MontirController::class, 'index']);
 
 Route::get('/petugas/', [PetugasController::class, 'index']);
 Route::get('/petugas/form/', [PetugasController::class, 'create']);
