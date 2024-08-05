@@ -42,6 +42,7 @@ Route::delete('/jabatan/{id}', [JabatanController::class, 'destroy']);
 
 Route::get('/montir/', [MontirController::class, 'index']);
 Route::get('/montir/form/', [MontirController::class, 'create']);
+Route::post('/montir/store/', [MontirController::class, 'store']);
 
 Route::get('/petugas/', [PetugasController::class, 'index']);
 Route::get('/petugas/form/', [PetugasController::class, 'create']);

@@ -30,7 +30,14 @@ class MontirController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $mor = new Montir;
+        $mor->nama_montir = $request->nama_montir;
+        $mor->alamat_montir = $request->alamat_montir;
+        $mor->telp_montir = $request->telp_montir;
+        $mor->jabatan_id = $request->jabatan;
+        $mor->save();
+
+        return redirect('/montir/');
     }
 
     /**
