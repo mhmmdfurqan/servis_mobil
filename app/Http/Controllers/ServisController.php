@@ -96,6 +96,8 @@ class ServisController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $ser = Servis::find($id);
+        $ser->delete();
+        return redirect('/servis/');
     }
 }
