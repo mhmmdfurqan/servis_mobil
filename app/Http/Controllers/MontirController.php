@@ -56,7 +56,9 @@ class MontirController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $mor = Montir::find($id);
+        $jab = Jabatan::all();
+        return view('montir.edit',compact('mor','jab'));
     }
 
     /**
@@ -64,7 +66,14 @@ class MontirController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $mor = Montir::find($id);
+        $mor->nama_montir = $request->nama_montir;
+        $mor->alamat_montir = $request->alamat_montir;
+        $mor->telp_montir = $request->telp_montir;
+        $mor->jabatan_id = $request->jabatan;
+        $mor->save();
+
+        return redirect('/montir/');
     }
 
     /**
