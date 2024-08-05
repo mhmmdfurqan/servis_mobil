@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Pembayaran;
 
 class PembayaranController extends Controller
 {
@@ -11,7 +12,7 @@ class PembayaranController extends Controller
      */
     public function index()
     {
-        //
+        return view('pembayaran.index');
     }
 
     /**

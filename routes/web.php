@@ -6,6 +6,7 @@ use App\Http\Controllers\JabatanController;
 use App\Http\Controllers\PetugasController;
 use App\Http\Controllers\ServisController;
 use App\Http\Controllers\MontirController;
+use App\Http\Controllers\PembayaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,3 +63,5 @@ Route::get('/servis/edit/{id}', [ServisController::class, 'edit']);
 Route::put('/servis/{id}', [ServisController::class, 'update']);
 Route::put('/servis/{id}', [ServisController::class, 'update']);
 Route::delete('/servis/{id}', [ServisController::class, 'destroy']);
+
+Route::get('/pembayaran/', [PembayaranController::class, 'index']);
