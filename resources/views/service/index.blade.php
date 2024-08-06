@@ -13,11 +13,12 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Nama Customer</th>
+                                            <th>Kode Service</th>
+                                            <th>Customer</th>
                                             <th>No Plat</th>
-                                            <th>Customer Service</th>
+                                            <th>Cs</th>
                                             <th>Montir</th>                                            
-                                            <th>Tanggal Service</th>
+                                            <th>Tgl Service</th>
                                             <th>Diagnosa</th>
                                             <th>Status</th>
                                             <th>Aksi</th>                                         
@@ -27,6 +28,7 @@
                                     @forelse ($ser as $item)                                    
                                         <tr>
                                             <td>{{$nomor++}}</td>
+                                            <td>{{$item->id}}</td>
                                             <td>{{$item->customers->nama_customer}}</td>
                                             <td>{{$item->no_polisi}}</td>
                                             <td>{{$item->petugas->nama_petugas}}</td>

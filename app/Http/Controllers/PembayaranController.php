@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pembayaran;
+use App\Models\Servis;
+use App\Models\Customer;
+use App\Models\Petugas;
+use App\Models\Montir;
 
 class PembayaranController extends Controller
 {
@@ -20,7 +24,14 @@ class PembayaranController extends Controller
      */
     public function create()
     {
-        //
+        
+        $ser = Servis::where('status', 'pending')->get();
+        $cus = Customer::all();
+        $pet = Petugas::all();
+        $ser = Servis::all();
+        $mor = Montir::all();
+        $pem = Pembayaran::all();
+        return view('pembayaran.form',compact('cus','pet','ser','mor','pem'));
     }
 
     /**
@@ -28,7 +39,24 @@ class PembayaranController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $pem = new Pembayaran;
+        $pem->servis_id = $request->servis_id;        
+        $pem->no_polisi = $request->no_polisi;        
+        $pem->perbaikan = $request->perbaikan;
+        $pem->tanggal_pembayaran = now();
+        $pem->harga = $request->harga;
+        $pem->bayar = $request->bayar;
+        $pem->kembalian = $request->kembalian;
+        $pem->status = 'selesai';
+        $pem->save();
+        
+        $ser = Servis::find($request->servis_id);
+        $ser->status = 'selesai';
+        $ser->save();
+        
+
+        return redirect('/pembayaran/');
     }
 
     /**

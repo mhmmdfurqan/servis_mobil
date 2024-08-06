@@ -121,14 +121,11 @@
                                     </a>
                                     <ul class="nk-menu-sub">
                                         <li class="nk-menu-item">
-                                            <a href="html/pembayaran-default.html" class="nk-menu-link"><span class="nk-menu-text">Pembayaran List - Default</span></a>
+                                            <a href="pembayaran" class="nk-menu-link"><span class="nk-menu-text">Pembayaran List</span></a>
                                         </li>
                                         <li class="nk-menu-item">
-                                            <a href="html/pembayaran-regular.html" class="nk-menu-link"><span class="nk-menu-text">Pembayaran List - Regular</span></a>
-                                        </li>
-                                        <li class="nk-menu-item">
-                                            <a href="html/pembayaran-sales.html" class="nk-menu-link"><span class="nk-menu-text">Pembayaran List - Sales</span></a>
-                                        </li>
+                                            <a href="pembayaran/form" class="nk-menu-link"><span class="nk-menu-text">Pembayaran Add</span></a>
+                                        </li>                                        
                                     </ul><!-- .nk-menu-sub -->
                                 </li><!-- .nk-menu-item -->  
                                                                    

@@ -13,49 +13,54 @@
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>Id Service</th>
                                             <th>Nama Customer</th>
                                             <th>No Plat</th> 
-                                            <th>Nama Cs</th>
-                                            <th>Nama Montir</th> 
                                             <th>Diagnosa</th>
                                             <th>Tanggal Pembayaran</th>
-                                            <th>Status</th>                                         
+                                            <th>Status</th> 
+                                            <th>Harga</th>                                            
+                                            <th>Aksi</th>                                        
                                         </tr>
                                     </thead>                                   
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>181</td>
                                             <td>Alex D</td>
-                                            <td>BL 55 AMM</td>
-                                            <td>Agus</td>
-                                            <td>Riski</td>
+                                            <td>BL 55 AMM</td>                                            
                                             <td>Ac kurang dingin</td>
                                             <td>2023-02-18</td>
                                             <td>Selesai</td>
+                                            <td></td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm">CETAK</a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>182</td>
                                             <td>Vanessa</td>
-                                            <td>BL 88 FA</td>
-                                            <td>Agus</td>
-                                            <td>Riski</td>
+                                            <td>BL 88 FA</td>                                           
                                             <td>Suara kasar pada mesin</td>
                                             <td>2023-02-18</td>
                                             <td>Selesai</td>
+                                            <td></td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm">CETAK</a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>183</td>
                                             <td>Cleaa</td>
-                                            <td>BL 805 AMM</td>
-                                            <td>Agus</td>
-                                            <td>Riski</td>
+                                            <td>BL 805 AMM</td>                                            
                                             <td>Overhead</td>
                                             <td>2023-02-18</td>
                                             <td>Selesai</td>
+                                            <td></td>
+                                            <td>
+                                            <a href="#" class="btn btn-info btn-sm">CETAK</a>
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
+                                            </td>
                                         </tr>                                       
                                     </tbody>
                                 </table>
