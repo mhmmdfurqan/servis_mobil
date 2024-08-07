@@ -9,9 +9,9 @@
         <form method="POST" action="/pembayaran/store/">
             @csrf
             <div class="mb-3">
-                <label for="servis_id" class="form-label">Nama Customer</label>
+                <label for="servis_id" class="form-label">Kode Servis</label>
                 <select name="servis_id" class="form-control" id="servis_id">
-                    <option value="">Pilih Nama</option>
+                    <option value="">Pilih Kode Servis</option>
                     @foreach ($ser as $item)
                     <option value="{{ $item->id }}" data-no_polisi="{{ $item->no_polisi }}" data-perbaikan="{{ $item->perbaikan }}" data-status="{{ $item->status }}">
                         {{ $item->id}}

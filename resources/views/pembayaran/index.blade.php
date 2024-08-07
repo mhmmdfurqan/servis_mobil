@@ -17,7 +17,7 @@
                                             <th>Nama Customer</th>
                                             <th>No Plat</th> 
                                             <th>Diagnosa</th>
-                                            <th>Tanggal Pembayaran</th>                                             
+                                            <th>Tgl Pembayaran</th>                                             
                                             <th>Harga</th>
                                             <th>Bayar</th>                                            
                                             <th>Kembalian</th>
@@ -73,8 +73,8 @@
                                                 });
                                                 });
                                             </script>
-                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#"><em class="bi bi-trash"></em></button>
-                                            <div class="modal fade" tabindex="-1" id="#">    
+                                            <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#hapus{{$item->id}}"><em class="bi bi-trash"></em></button>
+                                            <div class="modal fade" tabindex="-1" id="hapus{{$item->id}}">    
                                                     <div class="modal-dialog" role="document">        
                                                         <div class="modal-content">            
                                                             <a href="pembayaran" class="close" data-dismiss="modal" aria-label="Close">                
