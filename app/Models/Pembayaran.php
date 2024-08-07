@@ -12,6 +12,11 @@ class Pembayaran extends Model
 
     public function servis(): HasOne
     {
-        return $this->belongsTo(Servis::class);
+        return $this->hasOne(Servis::class, 'id','servis_id');
+    }
+
+    public function customers(): HasOne
+    {
+        return $this->hasOne(Customer::class, 'id','customer_id');
     }
 }

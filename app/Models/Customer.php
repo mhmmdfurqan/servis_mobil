@@ -14,4 +14,9 @@ class Customer extends Model
     {
         return $this->belongsTo(Servis::class);
     }
+
+    public function pembayaran(): BelongsTo
+    {
+        return $this->hasMany(Pembayaran::class);
+    }
 }

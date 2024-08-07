@@ -16,7 +16,13 @@ class PembayaranController extends Controller
      */
     public function index()
     {
-        return view('pembayaran.index');
+        $nomor = 1;
+        $cus = Customer::all();
+        $pet = Petugas::all();
+        $ser = Servis::all();
+        $mor = Montir::all();
+        $pem = Pembayaran::all();
+        return view('pembayaran.index',compact('nomor','cus','pet','ser','mor','pem'));
     }
 
     /**
@@ -65,6 +71,20 @@ class PembayaranController extends Controller
     public function show(string $id)
     {
         //
+    }
+
+    /**
+     * Show the form for cetak the specified resource.
+     */
+    public function cetak($id)
+    {
+        $pem = Pembayaran::find($id);
+        if (!$pem) {
+            abort(404, "Data tidak ditemukan.");
+        }
+        // Logika untuk mencetak data, bisa berupa pengiriman ke view cetak atau mengenerate PDF
+        // Misalnya:
+        return view('pembayaran.cetak', compact('pem'));
     }
 
     /**

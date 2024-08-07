@@ -67,3 +67,4 @@ Route::delete('/servis/{id}', [ServisController::class, 'destroy']);
 Route::get('/pembayaran/', [PembayaranController::class, 'index']);
 Route::get('/pembayaran/form/', [PembayaranController::class, 'create']);
 Route::post('/pembayaran/store/', [PembayaranController::class, 'store']);
+Route::get('pembayaran/cetak/{id}', [PembayaranController::class, 'cetak']);
