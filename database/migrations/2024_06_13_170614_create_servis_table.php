@@ -16,8 +16,10 @@ return new class extends Migration
             $table->bigInteger('customer_id');
             $table->string('no_polisi',10)->unique();
             $table->bigInteger('petugas_id');
+            $table->bigInteger('montir_id');
             $table->date('tanggal_servis');
-            $table->bigInteger('perbaikan_id');
+            $table->string('perbaikan',300);
+            $table->string('status',50);
             $table->timestamps();
         });
     }

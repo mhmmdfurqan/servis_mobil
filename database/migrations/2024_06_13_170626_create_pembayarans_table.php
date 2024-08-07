@@ -14,9 +14,13 @@ return new class extends Migration
         Schema::create('pembayarans', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('servis_id');
-            $table->string('tanggal_pembayaran')->unique();
-            $table->bigInteger('petugas_id');    
-            $table->string('total_harga',100);
+            $table->string('no_polisi',10)->unique();
+            $table->string('perbaikan',10);
+            $table->date('tanggal_pembayaran');
+            $table->Integer('harga',500);
+            $table->Integer('bayar',500);
+            $table->Integer('kembalian',500);
+            $table->string('status',50);
             $table->timestamps();
         });
     }
