@@ -76,6 +76,7 @@
             <p>Telp: (021) 12345678</p>
         </div>
         <div class="content">
+            <p><strong>Id Transaksi:</strong> {{ $pem->id ?? 'Data tidak tersedia' }}</p>
             <p><strong>Kode Servis:</strong> {{ $pem->servis->id ?? 'Data tidak tersedia' }}</p>
             <p><strong>Nama Customer:</strong> {{ $pem->servis->customers->nama_customer ?? 'Data tidak tersedia' }}</p>
             <p><strong>No Plat:</strong> {{ $pem->servis->no_polisi ?? 'Data tidak tersedia' }}</p>

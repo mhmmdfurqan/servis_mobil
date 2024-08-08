@@ -18,25 +18,39 @@
                     </option>
                     @endforeach
                 </select>
+            </div>
 
+            <div class="mb-3">
                 <label for="no_polisi" class="form-label">No Plat</label>
                 <input type="text" id="no_polisi" class="form-control" name="no_polisi" readonly>
+            </div>
 
+            <div class="mb-3">
                 <label for="perbaikan" class="form-label">Diagnosa</label>
                 <input type="text" id="perbaikan" class="form-control" name="perbaikan" readonly>
+            </div>
 
+            <div class="mb-3">
                 <label for="tanggal_pembayaran" class="form-label">Tanggal Pembayaran</label>
                 <input type="date" name="tanggal_pembayaran" class="form-control" value="{{ date('Y-m-d') }}" id="tanggal_pembayaran" readonly>
+            </div>
 
+            <div class="mb-3">
                 <label for="status" class="form-label">Status</label>
                 <input type="text" id="status" class="form-control" name="status" value="selesai" readonly>
+            </div>
 
+            <div class="mb-3">
                 <label for="harga" class="form-label">Harga:</label>
                 <input type="text" id="harga" class="form-control" name="harga">
+            </div>
 
+            <div class="mb-3">
                 <label for="bayar" class="form-label">Bayar:</label>
                 <input type="number" id="bayar" class="form-control" name="bayar">
+            </div>
 
+            <div class="mb-3">
                 <label for="kembalian" class="form-label">Kembalian:</label>
                 <input type="text" id="kembalian" class="form-control" name="kembalian" readonly>
             </div>
