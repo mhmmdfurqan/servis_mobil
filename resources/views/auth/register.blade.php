@@ -33,7 +33,7 @@
                                     <div class="nk-block-head-content">
                                         <h4 class="nk-block-title">Register</h4>
                                         <div class="nk-block-des">
-                                            <p>Membuat akun baru di servis mobil</p>
+                                            <p>Membuat akun baru di Cann Garage</p>
                                         </div>
                                     </div>
                                 </div>
@@ -46,7 +46,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label class="form-label" for="email">Email Addres</label>
+                                        <label class="form-label" for="email">Email Address</label>
                                         <div class="form-control-wrap">                                            
                                             <input id="email" type="email" placeholder="Masukkan email address" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
                                         </div>
